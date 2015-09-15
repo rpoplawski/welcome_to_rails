@@ -13,7 +13,7 @@ end
       any_user = User.find(params[:id])
       render text: "params: #{params.inspect} user: #{any_user.first_name}, #{any_user.last_name}, #{any_user.age}", status: 200
     rescue ActiveRecord::RecordNotFound
-      render text: "Sorry, user with id of #{params[:id]} was not found", status: 404
+      render text: "Sorry, the user with id of #{params[:id]} was not found", status: 404
     end
   end
 end
