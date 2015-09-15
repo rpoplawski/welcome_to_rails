@@ -18,6 +18,9 @@ end
   end
 end
 
+
+
+
 ###############
 #if @params[:id] != nil
 #    if User.exists?(@params[:id]) == false
